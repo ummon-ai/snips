@@ -1,14 +1,17 @@
 
 <!-- 
 Script : Zotero API tag retriever
-Description: Get the tags for your Zotero collection using the Zotero API. Print them out in a webpage (Wordpress etc.).    	     
+Description: Get the tags for your Zotero collection using the Zotero API. Print them out in a webpage (Wordpress etc.). 
+See https://www.zotero.org/support/dev/web_api/v3/start for the relevant parameters used here.
 Author: Aatu Poutanen (aasapo@utu.fi)
 Free to use and modify. 		   	
 -->
 
 <?php
 
-// Define variables.
+// Define variables. Zotero API limits the maximum results of an API query to 100. 
+// The workaround in this script is to retrieve the data in as many parts as needed (line 21: while (x <= (...)),
+// and combine them into a single array.
 
 $StartFrom = 0; 
 $NumTags = 70;
