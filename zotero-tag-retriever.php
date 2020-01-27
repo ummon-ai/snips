@@ -3,6 +3,7 @@
 Script : Zotero API tag retriever
 Description: Get the tags for your Zotero collection using the Zotero API. Print them out in a webpage (Wordpress etc.). 
 See https://www.zotero.org/support/dev/web_api/v3/start for the relevant parameters used here.
+See end of file for CSS styling your links into Zotero -style buttons.
 Author: Aatu Poutanen (aasapo@utu.fi)
 Free to use and modify. 		   	
 -->
